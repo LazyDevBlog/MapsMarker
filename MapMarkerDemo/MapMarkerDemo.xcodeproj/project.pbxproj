@@ -13,6 +13,8 @@
 		B29311A81D5DB38100FFB614 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B29311A61D5DB38100FFB614 /* LaunchScreen.storyboard */; };
 		B29311B41D5DB3DB00FFB614 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29311B21D5DB3DB00FFB614 /* MainVC.swift */; };
 		B29311B51D5DB3DB00FFB614 /* MainVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B29311B31D5DB3DB00FFB614 /* MainVC.xib */; };
+		B29311B71D5DC68200FFB614 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B29311B61D5DC68200FFB614 /* MapKit.framework */; };
+		B29311B91D5DC68800FFB614 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B29311B81D5DC68800FFB614 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		B29311A91D5DB38100FFB614 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B29311B21D5DB3DB00FFB614 /* MainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainVC.swift; path = ViewControllers/MainVC.swift; sourceTree = "<group>"; };
 		B29311B31D5DB3DB00FFB614 /* MainVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MainVC.xib; path = ViewControllers/MainVC.xib; sourceTree = "<group>"; };
+		B29311B61D5DC68200FFB614 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		B29311B81D5DC68800FFB614 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B29311B91D5DC68800FFB614 /* CoreLocation.framework in Frameworks */,
+				B29311B71D5DC68200FFB614 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +46,8 @@
 		B29311911D5DB38000FFB614 = {
 			isa = PBXGroup;
 			children = (
+				B29311B81D5DC68800FFB614 /* CoreLocation.framework */,
+				B29311B61D5DC68200FFB614 /* MapKit.framework */,
 				B293119C1D5DB38000FFB614 /* MapMarkerDemo */,
 				B293119B1D5DB38000FFB614 /* Products */,
 			);

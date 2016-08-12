@@ -7,6 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainVC" customModule="MapMarkerDemo" customModuleProvider="target">
             <connections>
+                <outlet property="mapView" destination="5eJ-fv-yE6" id="3Ez-uG-AS7"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -14,7 +15,22 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="5eJ-fv-yE6">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="b7v-bd-Bqh"/>
+                    </connections>
+                </mapView>
+            </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="5eJ-fv-yE6" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Iip-KY-oOp"/>
+                <constraint firstAttribute="bottom" secondItem="5eJ-fv-yE6" secondAttribute="bottom" id="LUM-9R-dXq"/>
+                <constraint firstItem="5eJ-fv-yE6" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="gPA-Fw-lYK"/>
+                <constraint firstAttribute="trailing" secondItem="5eJ-fv-yE6" secondAttribute="trailing" id="uxe-2W-C2e"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
         </view>
     </objects>
